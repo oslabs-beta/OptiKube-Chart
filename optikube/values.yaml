@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: gcr.io/hardy-nation-412201/optikube
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -105,3 +105,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+cost-analyzer:
+  kubecostToken: "aGVsbUBrdWJlY29zdC5jb20=xm343yadf98"
